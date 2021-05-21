@@ -10,6 +10,7 @@ impl Config {
         if args.len() < 3 {
             return Err("not enough arguments");
         }
+
         Ok(Config {
             query: args[1].clone(),
             file_name: args[2].clone(),
